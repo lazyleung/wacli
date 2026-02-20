@@ -30,7 +30,8 @@ If you install via Homebrew, you can skip the local build step.
 
 ### Option B: Build locally
 
-- `go build -tags sqlite_fts5 -o ./dist/wacli ./cmd/wacli`
+- If on linux set cgo env var: `go env -w CGO_ENABLED=1`
+- `go build -tags sqlite_fts5 -o ./dist/wacli ./cmd/wacli` or `pnpm build`
 
 Run (local build only):
 
