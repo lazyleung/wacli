@@ -90,6 +90,5 @@ jobs:
         run: |
           gh release upload "$RELEASE_TAG" \
             dist/*.tar.gz \
-            dist/*.zip \
             dist/checksums-linux-windows.txt \
             --clobber
