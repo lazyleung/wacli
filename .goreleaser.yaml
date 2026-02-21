@@ -5,7 +5,7 @@ project_name: wacli
 builds:
   - id: wacli
     main: ./cmd/wacli
-    binary: wacli
+    binary: lazywacli
     env:
       - CGO_ENABLED=1
     flags:
