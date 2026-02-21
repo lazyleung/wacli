@@ -1,5 +1,7 @@
 # 🗃️ wacli — WhatsApp CLI: sync, search, send.
 
+**Note this is a customized version with send capability disabled**
+
 WhatsApp CLI built on top of `whatsmeow`, focused on:
 
 - Best-effort local sync of message history + continuous capture
@@ -31,7 +33,7 @@ If you install via Homebrew, you can skip the local build step.
 ### Option B: Build locally
 
 - If on linux set cgo env var: `go env -w CGO_ENABLED=1`
-- `go build -tags sqlite_fts5 -o ./dist/wacli ./cmd/wacli` or `pnpm build`
+- `go build -tags sqlite_fts5 -o ./dist/lazywacli ./cmd/wacli` or `pnpm build`
 
 Run (local build only):
 
