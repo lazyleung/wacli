@@ -1,4 +1,4 @@
-module github.com/lazyleung/wacli
+module github.com/steipete/wacli
 
 go 1.25.0
 
