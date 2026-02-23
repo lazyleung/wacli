@@ -1,9 +1,9 @@
 version: 2
 
-project_name: lazywacli
+project_name: wacli
 
 builds:
-  - id: lazywacli
+  - id: wacli
     main: ./cmd/wacli
     binary: lazywacli
     env:
@@ -21,10 +21,10 @@ builds:
       - arm64
 
 universal_binaries:
-  - id: lazywacli
+  - id: wacli
     ids:
-      - lazywacli
-    name_template: lazywacli
+      - wacli
+    name_template: wacli
     replace: true
 
 archives:
