@@ -3,7 +3,7 @@ version: 2
 project_name: lazywacli
 
 builds:
-  - id: wacli
+  - id: lazywacli
     main: ./cmd/wacli
     binary: lazywacli
     env:
