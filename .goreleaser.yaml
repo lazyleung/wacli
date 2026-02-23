@@ -1,6 +1,6 @@
 version: 2
 
-project_name: wacli
+project_name: lazywacli
 
 builds:
   - id: wacli
@@ -21,10 +21,10 @@ builds:
       - arm64
 
 universal_binaries:
-  - id: wacli
+  - id: lazywacli
     ids:
-      - wacli
-    name_template: wacli
+      - lazywacli
+    name_template: lazywacli
     replace: true
 
 archives:
