@@ -1,9 +1,9 @@
 version: 2
 
-project_name: wacli
+project_name: lazywacli
 
 builds:
-  - id: wacli
+  - id: lazywacli
     main: ./cmd/wacli
     binary: lazywacli
     env:
@@ -21,15 +21,15 @@ builds:
       - arm64
 
 universal_binaries:
-  - id: wacli
+  - id: lazywacli
     ids:
-      - wacli
-    name_template: wacli
+      - lazywacli
+    name_template: lazywacli
     replace: true
 
 archives:
   - id: default
-    format: tar.gz
+    formats: [ 'tar.gz' ]
     name_template: >-
       {{ .ProjectName }}-{{ if eq .Os "darwin" }}macos{{ else }}{{ .Os }}{{ end }}-{{ if eq .Arch "all" }}universal{{ else }}{{ .Arch }}{{ end }}
     files:
